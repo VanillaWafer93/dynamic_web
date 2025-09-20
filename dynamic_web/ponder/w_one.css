@@ -1,0 +1,26 @@
+body {
+    background-color: grey;
+}
+#content {
+    margin: 0 auto;
+    max-width: 675px;
+    text-align: center;
+}
+.sub_thing {
+    font-size: 20px;
+    color: blue;
+}
+hr {
+    max-width: 550px;
+    border-color: blue;
+}
+img {
+    width: 300px;
+    height: 150px;
+}
+.list {
+    text-align: left;
+    margin-left: 150px;
+    max-width: 200px;
+    margin-bottom: 0;
+}
