@@ -1,0 +1,31 @@
+#content {
+    align-content: center;
+    margin: 0 auto;
+    max-width: 550px;
+    text-align: center;
+}
+#main_font {
+    font-size: large;
+    line-height: 1.5;
+}
+.college_name {
+    color: blue;
+}
+img {
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: 20px;
+}
+.left_aligned_content {
+    text-align: left;
+}
+.ital {
+    font-style: italic;
+}
+.numbered_stuff {
+    text-align: left;
+    margin-top: 20px;
+}
+li {
+    margin-top: 20px;
+}
