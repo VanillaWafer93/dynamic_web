@@ -1,31 +1,88 @@
-#content {
-    align-content: center;
-    margin: 0 auto;
-    max-width: 550px;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#main_font {
-    font-size: large;
-    line-height: 1.5;
+
+/* Overall page styling */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
 }
-.college_name {
-    color: blue;
+
+/* Container box */
+.content {
+  border: 1px solid #ccc;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
 }
-img {
-    max-width: 150px;
-    max-height: 150px;
-    margin-top: 20px;
+
+/* Header section */
+header.title {
+  text-align: center;
+  margin-bottom: 30px;
 }
-.left_aligned_content {
-    text-align: left;
+
+header.title h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
-.ital {
-    font-style: italic;
+
+header.title h2 {
+  font-size: 22px;
+  color: #006EB6;
+  letter-spacing: 1px;
 }
-.numbered_stuff {
-    text-align: left;
-    margin-top: 20px;
+
+/* Main content */
+main p {
+  margin-bottom: 20px;
+  text-align: left;
 }
-li {
-    margin-top: 20px;
+
+.does-list {
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+.does-list li {
+  margin-bottom: 15px;
+}
+
+/* Footer with logo */
+footer {
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+}
+body.dark .content {
+    background-color: #333;
+    color: white;
+}
+body.dark {
+    background-color: #333;
+    color: white;
+}
+.dark h2 {
+    color: rgb(111, 111, 255);
+}
+.theme_box {
+  position: fixed; /* Stick to top-left even on scroll */
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
