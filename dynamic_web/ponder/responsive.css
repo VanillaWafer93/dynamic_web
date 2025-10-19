@@ -67,6 +67,7 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+    
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
@@ -75,3 +76,4 @@ footer {
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+          
