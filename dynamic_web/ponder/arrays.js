@@ -1,7 +1,30 @@
 //  arrays.js
 const steps = ["one", "two", "three"];
 function listTemplate(step) {
-  return //the html string made from step
+  return `<li>${step}</li>`;
 }
-const stepsHtml = // use map to convert the list from strings to HTML
-document.querySelector("#myList").innerHTML = // set the innerHTML
+const stepsHtml = steps.map(listTemplate);
+document.querySelector("#myList").innerHTML = stepsHtml.join();
+
+
+const grades = ["A" , "B" , "A"];
+function convertGradeToPoints(grade){
+  let points = 0
+  if (grades === "A") {
+    points = 4
+  }else if (grades === "B"){
+    points = 3
+  }
+  return points;
+}
+// const gpaPoints = grades.map(convertGradeToPoints);
+const gpa = gpaPoints.reduce((total, item) => total + item) / gpaPoints.length;
+
+
+const words = ["watermelon", "peach", "apple", "tomato", "grape"];
+const shortWords = words.filter((word) => word.length < 6);
+
+
+const myArray = [12 , 34 , 21 , 54];
+const luckyNumber = 21;
+let luckyNumberIndex = myArray.indexOf(luckyNumberIndex);
