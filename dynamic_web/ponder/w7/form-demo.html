@@ -1,0 +1,59 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+      <section class="errors"></section>
+      <form id="checkoutForm" action="completed.html">
+        <p>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" 
+            placeholder="Enter your full name" required>
+        </p>
+
+        <p>
+            <label for="name">Email</label>
+            <input id="email" name="email" type="email" 
+            placeholder="Enter your email" required>
+        </p>
+
+        <p>
+            <label for="Address">Address</label>
+            <textarea id="address" name="address" type="text" 
+            placeholder="Enter your address" required></textarea>
+        </p>
+
+        <p>
+            <label for="payment">Payment Type</label>
+            <select id="payment" name="payment">
+                <option value="">Choose One</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">Paypal</option>
+            </select>
+        </p>
+        <p class="hide" id="creditCardInfo">
+            <label for="creditCardNumber">Credit Card Number</label>
+            <input id="creditCardNumber" name="creditCardNumber" type="text" 
+            placeholder="Enter your Credit Card Number"
+            pattern="[0-9]{16}"  
+            required>
+        </p>
+        <p class="hide" id="paypalInfo">
+            <label for="PayPalUsername">PayPal Username</label>
+            <input id="paypalUsername" name="paypalUsername" type="text" 
+            placeholder="Enter your PayPal username" required>
+        </p>
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+      </form>
+    </main>
+  </body>
+</html>
