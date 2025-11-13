@@ -1,0 +1,46 @@
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-size: 20px;
+max-width: 1280px;
+margin: auto;
+padding: 1em;
+}
+
+img {
+max-width: 100%;
+}
+
+.main-nav {
+list-style-type: none;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+gap: 1em;
+}
+
+hr{
+margin-top: 50px;
+}
+
+@media screen and (min-width: 700px){
+    .media-card{
+        display: flex;
+        gap: 1em;
+    }
+    .gallery{
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .gallery > .media-card{
+        /* max-width: ; */
+        flex: 0 0 45%;
+        display: flex;
+        align-items: center;
+    }
+}
