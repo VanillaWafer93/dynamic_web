@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+}
+header {
+    display: flex;
+    height: 100px;
+    gap: 1em;
+    align-items: center;
+    background-color: #474E53;
+}
+a {
+    color: white;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: #EDEDED;
+    max-width: 600px;
+    justify-self: center;
+    padding: 20px;
+    border: 10px solid #381D2A;
+    border-radius: 100px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 700px;
+    justify-self: center;
+    gap: 50px;
+    padding-top: 20px;
+}
+.puzzle-info {
+    font-size: 1.5em;
+}
+
+.example-puzzle {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.code {
+    background-color: black;
+    padding: 5px;
+    color: black;
+}
+.code-box {
+    flex-basis: 100%;
+    max-width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
