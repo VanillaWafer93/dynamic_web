@@ -10,7 +10,7 @@ input.addEventListener("keydown", (event) => {
             btn.id = "startPuzzleBtn";
             btn.textContent = "Start Puzzle";
 
-            // When clicked, go to the puzzle page
+            // makes it so it sends you to the puzzle page
             btn.addEventListener("click", () => {
                 window.location.href = "puzzle-page.html";
             });
